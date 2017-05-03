@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+  <servlet>
+  	<servlet-name>requestInfoServlet</servlet-name>
+  	<servlet-class>web.servletRequestInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>requestInfoServlet</servlet-name>
+  	<url-pattern>/reqInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>servletResponseInfo</servlet-name>
+  	<servlet-class>web.reponseInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>helloServlet</servlet-name>
+    <servlet-class>web.helloServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addDept</servlet-name>
+    <servlet-class>web.addDept</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addEmp</servlet-name>
+    <servlet-class>web.addEmp</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>listEmpServlet</servlet-name>
+    <servlet-class>web.listEmpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ActionServlet</servlet-name>
+    <servlet-class>emp.ActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ValidateCode</servlet-name>
+    <servlet-class>web.ValidateCode</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>servletResponseInfo</servlet-name>
+  	<url-pattern>/resInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>helloServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addDept</servlet-name>
+    <url-pattern>/addDept</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addEmp</servlet-name>
+    <url-pattern>/addEmp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>listEmpServlet</servlet-name>
+    <url-pattern>/listEmp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActionServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidateCode</servlet-name>
+    <url-pattern>/code</url-pattern>
+  </servlet-mapping>
+</web-app>
